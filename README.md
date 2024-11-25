@@ -1,35 +1,34 @@
 # test_assignment
 
-This template should help get you started developing with Vue 3 in Vite.
+## Dynamic Vehicle Dropdowns
 
-## Recommended IDE Setup
+This project is a Vue.js-based web application that dynamically populates Year, Make, and Model dropdowns using data retrieved from a third-party API. Users can select a year, then a make, and finally a model, with each dropdown being dynamically updated based on the previous selection.
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
+## Features
 
-## Customize configuration
+- Dynamic dropdowns for vehicle Year, Make, and Model.
+- Fetches data from the provided API endpoints.
+- Handles asynchronous API calls with loading indicators and error handling.
+- Built with Vue 3 and modern development best practices.
 
-See [Vite Configuration Reference](https://vite.dev/config/).
+## API Endpoints Used
 
-## Project Setup
+1. Get Available Years
+   GET https://new.api.nexusautotransport.com/api/vehicles/years
 
-```sh
-yarn
-```
+2. Get Makes for a Given Year
+   GET https://new.api.nexusautotransport.com/api/vehicles/makes?year=<year>
 
-### Compile and Hot-Reload for Development
+3. Get Models for a Given Year and Make
+   GET https://new.api.nexusautotransport.com/api/vehicles/models?year=<year>&make=<make>
 
-```sh
-yarn dev
-```
+## Technologies Used
 
-### Compile and Minify for Production
+- Vue.js 3 for building the interface.
+- Axios for API requests.
+- GitHub Pages for deployment.
 
-```sh
-yarn build
-```
+### Live Demo
 
-### Lint with [ESLint](https://eslint.org/)
-
-```sh
-yarn lint
-```
+Access the deployed project here:
+[Live Demo](https://dvc0046.github.io/test_01/)
